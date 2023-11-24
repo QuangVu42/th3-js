@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT150344-VU-NHU-QUANG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="startTime()">
+    <div class="container html71">
+        <div class="box">
+            <div class="info">
+                <div class="info_avt">
+                    <img src="./assets/img/avt.jpg" alt="avt" class="info_avt-img" />
+                </div>
+                <div class="info_detail">
+                    <h3 class="info_detal-title">
+                        <p>MSV</p>
+                        : &nbsp; AT150344
+                    </h3>
+                    <h3 class="info_detal-title">
+                        <p>Họ và tên</p>
+                        : &nbsp; Vũ Như Quang
+                    </h3>
+                </div>
+                <div class="content_nav">
+                    <div class="content_nav-title"><a class="nav_link activeLink" href="index.html">2.7.1: Bài tập ví dụ
+                            mẫu</a></div>
+                    <div class="content_nav-title"> <a class="nav_link" href="index72.html">2.7.2: Thi trắc nghiệm</a>
+                    </div>
+                    <div class="content_nav-title"><a class="nav_link" href="index73.html">2.7.3: Thiết kế form cho
+                            table LOP</a></div>
+                    <div class="content_nav-title"><a class="nav_link" href="index74.html">2.7.4: Thiết kế form cho
+                            table HOSO</a></div>
+                    <div class="content_nav-title"><a class="nav_link" href="index75.html">2.7.5: Thiết kế form nhập</a>
+                    </div>
+                    <div class="content_nav-title"><a class="nav_link" href="index76.html">2.7.6: Danh sách</a></div>
+                    <div class="content_nav-title"><a class="nav_link" href="index77.html">2.7.7: Thực đơn</a></div>
+                    <div class="content_nav-title"><a class="nav_link" href="index78.html">2.7.8: Tab</a></div>
+                    <div class="content_nav-title"><a class="nav_link" href="index79.html">2.7.9: Cây</a></div>
+                    <div class="content_nav-title"><a class="nav_link" href="index710.html">2.7.10: Máy tính</a></div>
+                    <div class="content_nav-title"><a class="nav_link" href="index711.html">2.7.11: Hoạt cảnh</a></div>
+                    <div class="content_nav-title"><a class="nav_link" href="index712.html">2.7.12: Sắp xếp và tìm kiếm
+                            trên bảng</a></div>
+                </div>
+                <div class="info_kma">
+                    <img class="info_kma-logo" src="./assets/img/kma.jpg" alt="kma" />
+                </div>
+            </div>
+            <div class="content">
+                <div class="content_main">
+                    <h2>Bài thực hành số 1</h2>
+                    <div class="content_main-71">
+                        <div class="box71">
+                            <div
+                                style="display: flex; justify-content: space-between; height: 70px; float: left; width: 100%;">
+                                <div style="width: 350px;">
+                                    <h4>Câu 1: Sử dụng biến trong JS</h4>
+                                    <p id="cau1"></p>
+                                </div>
+                                <div class="box71_cau2"  style="width: 350px;">
+                                    <h4>Câu 2: Sử dụng Textbox và chương trình con</h4>
+                                    <div class="box71_cau2-content">
+                                        <input style="padding: 5px ; border-radius: 5px; border: none;" type="text"
+                                            id="cau2_input" name="cau2">
+                                        <button onclick="myAlertCau2()"
+                                            style="padding: 5px ; border-radius: 5px; border: none;">Chay thu</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; height: 70px; float: left; width: 100%;">
+                                <div class="box71_cau3"  style="width: 350px;">
+                                    <h4>Câu 3: Sử dụng if</h4>
+                                    <div class="box71_cau2-content">
+                                        <input style="padding: 5px ; border-radius: 5px; border: none;" type="number"
+                                            id="cau3_input" name="cau2">
+                                        <button onclick="myAlertCau3()"
+                                            style="padding: 5px ; border-radius: 5px; border: none;">Chay thu</button>
+                                    </div>
+                                </div>
+                                <div class="box71_cau3"  style="width: 350px;">
+                                    <h4>Câu 4: Sử dụng đối tương ngày tháng năm</h4>
+                                    <p id="cau4show"></p>
+                                </div>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; height: 70px; float: left; width: 100%;">
+                                <div class="box71_cau3"  style="width: 350px;">
+                                    <h4>Câu 5: Sử dụng switch</h4>
+                                    <p id="cau5Show"></p>
+                                </div>
+                                <div class="box71_cau3"  style="width: 350px;">
+                                    <h4>Câu 6: Sử dụng confirm</h4>
+                                    <input type="button" onclick="disp_confirm()" value="Display a confirm box"
+                                        style="padding: 5px ; border-radius: 5px; border: none;" />
+                                    <p id="cau6Show"></p>
+                                </div>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; height: 70px; float: left; width: 100%;">
+                                <div class="box71_cau3"  style="width: 350px;">
+                                    <h4>Câu 7: Sử dụng prompt</h4>
+                                    <input type="button" onclick="disp_prompt()" value="Display a prompt box"
+                                        style="padding: 5px ; border-radius: 5px; border: none;" />
+                                    <p id="cau7Show"></p>
+                                </div>
+                                <div class="box71_cau3"  style="width: 350px;">
+                                    <h4>Câu 8: Sử dụng kiểu String</h4>
+                                    <p id="cau8Show"></p>
+                                </div>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; height: 70px; float: left; width: 100%;">
+                                <div class="box71_cau3"  style="width: 350px;">
+                                    <h4>Câu 9: Sử dụng kiểu Array</h4>
+                                    <p id="cau9Show"></p>
+                                </div>
+                                <div class="box71_cau3"  style="width: 350px;">
+                                    <h4>Câu 10: Sử dụng kiểu thiết lập thời gian</h4>
+                                    <button onclick="timedMsg()"
+                                        style="padding: 5px ; border-radius: 5px; border: none;">Display
+                                        timed alertbox!</button>
+                                </div>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; height: 70px; float: left; width: 100%;">
+                                <div class="box71_cau3"  style="width: 350px;">
+                                    <h4>Câu 11: Sử dụng thiết lập thời gian khác</h4>
+                                    <button onclick="timedText()"
+                                        style="padding: 5px ; border-radius: 5px; border: none;">Display
+                                        timed alertbox!</button>
+                                </div>
+                                <div class="box71_cau3"  style="width: 350px;">
+                                    <h4>Câu 12: Đồng hồ</h4>
+                                    <p id="txt"></p>
+                                </div>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; height: 70px; float: left; width: 100%;">
+                                <div class="box71_cau3"  style="width: 350px;">
+                                    <h4>Câu 13: Hiệu ứng ảnh</h4>
+                                    <a href="http://www.dayhoctructuyen.com" target="_blank">
+                                        <img alt="Chao ban" src="./assets/img/71.jpg" name="b1" width="100" height="100"
+                                            onmouseover="mouseOver()" onmouseout="mouseOut()"></a>
+                                </div>
+                                <div class="box71_cau3"  style="width: 350px;">
+                                    <h4>Câu 14: Sử dụng Select … option</h4>
+                                    <form name ="myform">
+                                        <select onChange="disphone(phone,this.options[this.selectedIndex].value);" style="padding: 5px ; border-radius: 5px; border: none;">
+                                            <option value="lam"> Lê Thanh Lâm
+                                            <option value="duc"> Nguyễn đinh minh Đức
+                                            <option value="thinh"> Trần Văn thịnh
+                                            <option value="hien"> Đỗ Thế Hiền
+                                            <option value="daotao"> Phòng Đào tạo
+                                        </select>
+                                        <br />
+                                        <input type="text" name="numbox" value="" disabled style="padding: 5px ; border-radius: 5px; border: none; margin-top: 20px;">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./javascript.js"></script>
+</body>
+
+</html>
